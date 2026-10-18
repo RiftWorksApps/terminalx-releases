@@ -1,0 +1,89 @@
+{
+    "schema":  1,
+    "version":  "0.2.0",
+    "released_at":  "2026-10-18T15:19:51Z",
+    "download_url":  "https://github.com/RiftWorksApps/terminalx-releases/releases/latest/download/TerminalXSetup.exe",
+    "title":  "TerminalX for Windows",
+    "description":  "The Rift Works console for network engineers: serial, telnet and SSH in one window, with an AI Helper reading the console beside you, an IP scanner and a TFTP server as tabs.",
+    "details":  [
+                    {
+                        "key":  "version",
+                        "label":  "Version",
+                        "value":  "0.2.0"
+                    },
+                    {
+                        "key":  "released",
+                        "label":  "Released",
+                        "value":  "18 October 2026"
+                    },
+                    {
+                        "key":  "file",
+                        "label":  "File",
+                        "value":  "TerminalXSetup.exe"
+                    },
+                    {
+                        "key":  "size",
+                        "label":  "Size",
+                        "value":  "23.5 MB"
+                    },
+                    {
+                        "key":  "works_on",
+                        "label":  "Works on",
+                        "value":  "Windows 10 or 11, 64-bit"
+                    },
+                    {
+                        "key":  "publisher",
+                        "label":  "Publisher",
+                        "value":  "Rift Works"
+                    },
+                    {
+                        "key":  "installs_to",
+                        "label":  "Installs to",
+                        "value":  "Your own user profile (%LOCALAPPDATA%\\Programs\\TerminalX); no administrator password needed"
+                    },
+                    {
+                        "key":  "needs",
+                        "label":  "Needs",
+                        "value":  "An internet connection during the install: Claude Code and Memora are set up for the Helper when they are not on the PC yet"
+                    },
+                    {
+                        "key":  "account",
+                        "label":  "Account needed",
+                        "value":  "A Claude account for the Helper, signed in from the app. Consoles, the scanner and TFTP work without one"
+                    },
+                    {
+                        "key":  "updates",
+                        "label":  "Updates",
+                        "value":  "TerminalX checks here every 10 minutes and offers a new version; nothing is installed until you say so"
+                    }
+                ],
+    "whats_new":  {
+                      "heading":  "What's new in 0.2.0",
+                      "items":  [
+                                    "Updates from GitHub. TerminalX looks at the project's GitHub Releases every 10 minutes and when it starts; a new version shows in the status bar and under gear â†’ Check for updates, with its notes. Download, then Install and restart: the setup runs over the installed copy and TerminalX comes back on the new version. Each download is checked against the SHAâ€‘256 published with the release. Settings â†’ Updates holds the switch, the repository and an access token for a private repository.",
+                                    "The setup knows what is there. Welcome says which version is on the PC already and that an install updates it, and if GitHub has a newer setup than the one running, offers to fetch and run that instead.",
+                                    "New name. CodeKnife is now TerminalX. The program, the setup, the Start Menu entry and the Apps & features entry all carry the new name.",
+                                    "Nothing lost. On the first start under the new name, settings, saved hosts, session logs and the TFTP folder are copied from the old %APPDATA%\\CodeKnife folder when the new one does not exist yet. The old folder is left in place.",
+                                    "Environment variables are now TERMINALX_* (TERMINALX_HOSTS_FILE, TERMINALX_CLAUDE, TERMINALX_NO_LOGIN, TERMINALX_PTY_DEBUG)."
+                                ]
+                  },
+    "install":  {
+                    "heading":  "How to install",
+                    "steps":  [
+                                  "Click Download, then open TerminalXSetup.exe when it finishes.",
+                                  "If Windows SmartScreen warns about an unrecognised app, choose More info, then Run anyway. The setup is not code-signed yet.",
+                                  "Accept the license agreement, choose the folder and shortcuts, and click Install. If TerminalX is already on this PC this updates it and keeps your settings, hosts and logs."
+                              ]
+                },
+    "verify":  {
+                   "heading":  "Verify your download (optional)",
+                   "items":  [
+                                 {
+                                     "key":  "file_sha256",
+                                     "label":  "File checksum (SHA-256)",
+                                     "value":  "d7567b0cca929429cc3acb2184a941c7dabce20dac5441972e84bc206277fa74"
+                                 }
+                             ],
+                   "note":  "The file checksum changes with every release. In PowerShell: Get-FileHash TerminalXSetup.exe -Algorithm SHA256."
+               }
+}
