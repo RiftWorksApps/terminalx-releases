@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.2.0",
-    "released_at":  "2026-10-18T15:19:51Z",
+    "version":  "0.3.0",
+    "released_at":  "2026-10-31T21:04:53Z",
     "download_url":  "https://github.com/RiftWorksApps/terminalx-releases/releases/latest/download/TerminalXSetup.exe",
     "title":  "TerminalX for Windows",
     "description":  "The Rift Works console for network engineers: serial, telnet and SSH in one window, with an AI Helper reading the console beside you, an IP scanner and a TFTP server as tabs.",
@@ -9,12 +9,12 @@
                     {
                         "key":  "version",
                         "label":  "Version",
-                        "value":  "0.2.0"
+                        "value":  "0.3.0"
                     },
                     {
                         "key":  "released",
                         "label":  "Released",
-                        "value":  "18 October 2026"
+                        "value":  "1 November 2026"
                     },
                     {
                         "key":  "file",
@@ -24,7 +24,7 @@
                     {
                         "key":  "size",
                         "label":  "Size",
-                        "value":  "23.5 MB"
+                        "value":  "23.6 MB"
                     },
                     {
                         "key":  "works_on",
@@ -35,6 +35,11 @@
                         "key":  "publisher",
                         "label":  "Publisher",
                         "value":  "Rift Works"
+                    },
+                    {
+                        "key":  "signed",
+                        "label":  "Code-signed",
+                        "value":  "Not yet"
                     },
                     {
                         "key":  "installs_to",
@@ -58,13 +63,12 @@
                     }
                 ],
     "whats_new":  {
-                      "heading":  "What's new in 0.2.0",
+                      "heading":  "What's new in 0.3.0",
                       "items":  [
-                                    "Updates from GitHub. TerminalX looks at the project's GitHub Releases every 10 minutes and when it starts; a new version shows in the status bar and under gear â†’ Check for updates, with its notes. Download, then Install and restart: the setup runs over the installed copy and TerminalX comes back on the new version. Each download is checked against the SHAâ€‘256 published with the release. Settings â†’ Updates holds the switch, the repository and an access token for a private repository.",
-                                    "The setup knows what is there. Welcome says which version is on the PC already and that an install updates it, and if GitHub has a newer setup than the one running, offers to fetch and run that instead.",
-                                    "New name. CodeKnife is now TerminalX. The program, the setup, the Start Menu entry and the Apps & features entry all carry the new name.",
-                                    "Nothing lost. On the first start under the new name, settings, saved hosts, session logs and the TFTP folder are copied from the old %APPDATA%\\CodeKnife folder when the new one does not exist yet. The old folder is left in place.",
-                                    "Environment variables are now TERMINALX_* (TERMINALX_HOSTS_FILE, TERMINALX_CLAUDE, TERMINALX_NO_LOGIN, TERMINALX_PTY_DEBUG)."
+                                    "The Helper on your own AI server. Helper setup now offers Local AI next to Claude Code: your own AI server on your network, with a WAN / LAN toggle between two saved addresses, the model name and the key it gave you, and a Test connection button that says in one line which models the key can see or what is wrong. Everything else is the same as with Claude: the Helper reads the console, drafts commands, show commands run from verify blocks, config goes through the review dialog and the disruptive-command gate.",
+                                    "What Local AI cannot do yet. On your own server the Helper has no web search, no file tools and no Memora; your notes in the Helper folder are still handed to it to read, and the closing \"save memory\" round is skipped. Switch back to Claude Code in Helper setup at any time.",
+                                    "A cold model is waited for. The first request after the server has been idle can take about 30 seconds while the model loads; the pane says so instead of giving up. Errors come back in plain words: unreachable address, wrong key, unknown model name.",
+                                    "The splash follows the engine. With Local AI chosen the startup checks reach your server instead of looking for Claude Code and its sign-in; the status bar reads Local AI Â· LAN Â· coder-agent and the Sign in button stays away."
                                 ]
                   },
     "install":  {
@@ -81,7 +85,7 @@
                                  {
                                      "key":  "file_sha256",
                                      "label":  "File checksum (SHA-256)",
-                                     "value":  "d7567b0cca929429cc3acb2184a941c7dabce20dac5441972e84bc206277fa74"
+                                     "value":  "cd9d26c701a8abdf98bfae1c2b338a756eeced7d9b21d8bd32c6d240c7490d40"
                                  }
                              ],
                    "note":  "The file checksum changes with every release. In PowerShell: Get-FileHash TerminalXSetup.exe -Algorithm SHA256."
