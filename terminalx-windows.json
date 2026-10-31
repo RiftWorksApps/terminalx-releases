@@ -68,7 +68,7 @@
                                     "The Helper on your own AI server. Helper setup now offers Local AI next to Claude Code: your own AI server on your network, with a WAN / LAN toggle between two saved addresses, the model name and the key it gave you, and a Test connection button that says in one line which models the key can see or what is wrong. Everything else is the same as with Claude: the Helper reads the console, drafts commands, show commands run from verify blocks, config goes through the review dialog and the disruptive-command gate.",
                                     "What Local AI cannot do yet. On your own server the Helper has no web search, no file tools and no Memora; your notes in the Helper folder are still handed to it to read, and the closing \"save memory\" round is skipped. Switch back to Claude Code in Helper setup at any time.",
                                     "A cold model is waited for. The first request after the server has been idle can take about 30 seconds while the model loads; the pane says so instead of giving up. Errors come back in plain words: unreachable address, wrong key, unknown model name.",
-                                    "The splash follows the engine. With Local AI chosen the startup checks reach your server instead of looking for Claude Code and its sign-in; the status bar reads Local AI Â· LAN Â· coder-agent and the Sign in button stays away."
+                                    "The splash follows the engine. With Local AI chosen the startup checks reach your server instead of looking for Claude Code and its sign-in; the status bar reads Local AI · LAN · coder-agent and the Sign in button stays away."
                                 ]
                   },
     "install":  {
