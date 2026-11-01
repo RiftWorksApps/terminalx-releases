@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.3.0",
-    "released_at":  "2026-10-31T21:04:53Z",
+    "version":  "0.4.0",
+    "released_at":  "2026-11-01T15:49:35Z",
     "download_url":  "https://github.com/RiftWorksApps/terminalx-releases/releases/latest/download/TerminalXSetup.exe",
     "title":  "TerminalX for Windows",
     "description":  "The Rift Works console for network engineers: serial, telnet and SSH in one window, with an AI Helper reading the console beside you, an IP scanner and a TFTP server as tabs.",
@@ -9,7 +9,7 @@
                     {
                         "key":  "version",
                         "label":  "Version",
-                        "value":  "0.3.0"
+                        "value":  "0.4.0"
                     },
                     {
                         "key":  "released",
@@ -63,12 +63,14 @@
                     }
                 ],
     "whats_new":  {
-                      "heading":  "What's new in 0.3.0",
+                      "heading":  "What's new in 0.4.0",
                       "items":  [
-                                    "The Helper on your own AI server. Helper setup now offers Local AI next to Claude Code: your own AI server on your network, with a WAN / LAN toggle between two saved addresses, the model name and the key it gave you, and a Test connection button that says in one line which models the key can see or what is wrong. Everything else is the same as with Claude: the Helper reads the console, drafts commands, show commands run from verify blocks, config goes through the review dialog and the disruptive-command gate.",
-                                    "What Local AI cannot do yet. On your own server the Helper has no web search, no file tools and no Memora; your notes in the Helper folder are still handed to it to read, and the closing \"save memory\" round is skipped. Switch back to Claude Code in Helper setup at any time.",
-                                    "A cold model is waited for. The first request after the server has been idle can take about 30 seconds while the model loads; the pane says so instead of giving up. Errors come back in plain words: unreachable address, wrong key, unknown model name.",
-                                    "The splash follows the engine. With Local AI chosen the startup checks reach your server instead of looking for Claude Code and its sign-in; the status bar reads Local AI · LAN · coder-agent and the Sign in button stays away."
+                                    "Frame Studio. A new tool on the rail (also gear → Frame Studio, or Ctrl+Shift+R) records the screen as a zip of pictures, one frame every few seconds straight off the screen.",
+                                    "Pick what to record. Select area dims the screen and you drag a rectangle; Full screen takes the monitor TerminalX is on. While it records, a small always‑on‑top pill shows the clock, how many frames were kept and Stop, so TerminalX can be minimised or be the thing recorded; the rail icon turns red.",
+                                    "Only the frames that changed. A frame that barely differs from the last one kept is dropped (the sensitivity is yours to set). Frames are saved as png or jpg; each run leaves a folder and a zip in the output folder (the Desktop by default) and the done line opens it.",
+                                    "Settings remembered. The interval, format, skip switch, sensitivity and output folder come back next time.",
+                                    "IP scanner: a crash that could happen on the first scan of a busy network is fixed.",
+                                    "The Helper waits up to three minutes for a cold local model to start. With Local AI chosen, the first request after the server has been idle can take a while as the model loads; the Helper now allows three minutes (it was two) before it gives up."
                                 ]
                   },
     "install":  {
@@ -85,7 +87,7 @@
                                  {
                                      "key":  "file_sha256",
                                      "label":  "File checksum (SHA-256)",
-                                     "value":  "cd9d26c701a8abdf98bfae1c2b338a756eeced7d9b21d8bd32c6d240c7490d40"
+                                     "value":  "7896b357b976b629817ca3cf217f8c5775d4efa94059902b49082e42f0d41328"
                                  }
                              ],
                    "note":  "The file checksum changes with every release. In PowerShell: Get-FileHash TerminalXSetup.exe -Algorithm SHA256."
