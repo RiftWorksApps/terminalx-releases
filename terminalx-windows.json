@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.4.1",
-    "released_at":  "2026-11-05T13:06:17Z",
+    "version":  "0.4.2",
+    "released_at":  "2026-11-06T09:25:37Z",
     "download_url":  "https://github.com/RiftWorksApps/terminalx-releases/releases/latest/download/TerminalXSetup.exe",
     "title":  "TerminalX for Windows",
     "description":  "The Rift Works console for network engineers: serial, telnet and SSH in one window, with an AI Helper reading the console beside you, an IP scanner and a TFTP server as tabs.",
@@ -9,12 +9,12 @@
                     {
                         "key":  "version",
                         "label":  "Version",
-                        "value":  "0.4.1"
+                        "value":  "0.4.2"
                     },
                     {
                         "key":  "released",
                         "label":  "Released",
-                        "value":  "5 November 2026"
+                        "value":  "6 November 2026"
                     },
                     {
                         "key":  "file",
@@ -63,11 +63,9 @@
                     }
                 ],
     "whats_new":  {
-                      "heading":  "What's new in 0.4.1",
+                      "heading":  "What's new in 0.4.2",
                       "items":  [
-                                    "The Helper waits for the prompt. When it runs commands, in a device console or a local shell, each line now waits until the prompt is back before the next line is typed and before the output is read, however long the command keeps printing.",
-                                    "Memora with Local AI. In Helper setup the Memora switch and Set up Memora work whichever engine is chosen, and the status bar reads \"Memora not used with Local AI\" in plain grey instead of a warning; the store is used again the moment the Helper is back on Claude Code.",
-                                    "Slower when a device asks for something unexpected. When a device waits for input the Helper did not plan, the Helper now waits 20 seconds before carrying on, where it used to carry on after half a second. A note in the pane says so."
+                                    "Old devices connect. When a device offers only older SSH algorithms (SHA-1 key exchange, ssh-rsa, CBC ciphers) that Windows OpenSSH turns off, TerminalX now reconnects once with them allowed, says so in the console, and remembers it for that host; the host editor has an \"Allow legacy SSH algorithms\" switch."
                                 ]
                   },
     "install":  {
@@ -84,7 +82,7 @@
                                  {
                                      "key":  "file_sha256",
                                      "label":  "File checksum (SHA-256)",
-                                     "value":  "efbd40c77ee837d522d2005aa7dccd00c72e151925c02e7f119de0b9cd317ad7"
+                                     "value":  "71e4c86a771743c3041fc1650674cac145e7849db5a65d12b71befa55e08f7a8"
                                  }
                              ],
                    "note":  "The file checksum changes with every release. In PowerShell: Get-FileHash TerminalXSetup.exe -Algorithm SHA256."
