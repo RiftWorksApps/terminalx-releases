@@ -1,7 +1,7 @@
 {
     "schema":  1,
-    "version":  "0.4.2",
-    "released_at":  "2026-11-06T09:25:37Z",
+    "version":  "0.4.3",
+    "released_at":  "2026-11-06T09:40:15Z",
     "download_url":  "https://github.com/RiftWorksApps/terminalx-releases/releases/latest/download/TerminalXSetup.exe",
     "title":  "TerminalX for Windows",
     "description":  "The Rift Works console for network engineers: serial, telnet and SSH in one window, with an AI Helper reading the console beside you, an IP scanner and a TFTP server as tabs.",
@@ -9,7 +9,7 @@
                     {
                         "key":  "version",
                         "label":  "Version",
-                        "value":  "0.4.2"
+                        "value":  "0.4.3"
                     },
                     {
                         "key":  "released",
@@ -63,9 +63,9 @@
                     }
                 ],
     "whats_new":  {
-                      "heading":  "What's new in 0.4.2",
+                      "heading":  "What's new in 0.4.3",
                       "items":  [
-                                    "Old devices connect. When a device offers only older SSH algorithms (SHA-1 key exchange, ssh-rsa, CBC ciphers) that Windows OpenSSH turns off, TerminalX now reconnects once with them allowed, says so in the console, and remembers it for that host; the host editor has an \"Allow legacy SSH algorithms\" switch."
+                                    "Old devices connect, for real. The reconnect with older SSH algorithms that 0.4.2 tried now actually stays connected instead of dropping the tab at once."
                                 ]
                   },
     "install":  {
@@ -82,7 +82,7 @@
                                  {
                                      "key":  "file_sha256",
                                      "label":  "File checksum (SHA-256)",
-                                     "value":  "71e4c86a771743c3041fc1650674cac145e7849db5a65d12b71befa55e08f7a8"
+                                     "value":  "0ad214ce97622c519491e9000073857385e7ac810488145033f7958a19660a56"
                                  }
                              ],
                    "note":  "The file checksum changes with every release. In PowerShell: Get-FileHash TerminalXSetup.exe -Algorithm SHA256."
